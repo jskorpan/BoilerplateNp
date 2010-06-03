@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoilerplateNp", "BoilerplatePluginNp\BoilerplatePluginNp.vcproj", "{034E2365-9A48-4E63-AA1C-6ED73C895483}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEF75AE1-72B9-4D6E-922E-F4E1A29341E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DEF75AE1-72B9-4D6E-922E-F4E1A29341E7}.Debug|Win32.Build.0 = Debug|Win32
+		{DEF75AE1-72B9-4D6E-922E-F4E1A29341E7}.Release|Win32.ActiveCfg = Release|Win32
+		{DEF75AE1-72B9-4D6E-922E-F4E1A29341E7}.Release|Win32.Build.0 = Release|Win32
+		{034E2365-9A48-4E63-AA1C-6ED73C895483}.Debug|Win32.ActiveCfg = Debug|Win32
+		{034E2365-9A48-4E63-AA1C-6ED73C895483}.Debug|Win32.Build.0 = Debug|Win32
+		{034E2365-9A48-4E63-AA1C-6ED73C895483}.Release|Win32.ActiveCfg = Release|Win32
+		{034E2365-9A48-4E63-AA1C-6ED73C895483}.Release|Win32.Build.0 = Release|Win32
+		{FB0A3AEC-F0F4-4FF5-9000-CBAE6EA72751}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FB0A3AEC-F0F4-4FF5-9000-CBAE6EA72751}.Debug|Win32.Build.0 = Debug|Win32
+		{FB0A3AEC-F0F4-4FF5-9000-CBAE6EA72751}.Release|Win32.ActiveCfg = Release|Win32
+		{FB0A3AEC-F0F4-4FF5-9000-CBAE6EA72751}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

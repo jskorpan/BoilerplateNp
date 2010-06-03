@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="icon" href="/mxr.png" type="image/png">
+<META NAME="GENERATOR" CONTENT="lxr-1998-06-10: http://lxr.linux.no">
+<title>seamonkey/modules/plugin/samples/npruntime/Makefile.in</title>
+</head>
+
+<BODY   BGCOLOR="#FFFFFF" TEXT="#000000"
+	LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+
+<TABLE BGCOLOR="#000000" WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD><A HREF="http://www.mozilla.org/"><IMG
+ SRC="http://www.mozilla.org/images/mozilla-banner.gif" ALT=""
+ BORDER=0 WIDTH=600 HEIGHT=58></A></TD></TR></TABLE>
+
+<TABLE BORDER=0 CELLPADDING=12 CELLSPACING=0 WIDTH="100%">
+ <TR>
+  <TD ALIGN=LEFT VALIGN=CENTER>
+   <NOBR><FONT SIZE="+1"><B>
+    <a href="/">LXR Roots</a> -   
+    <A HREF="http://lxr.mozilla.org/seamonkey">seamonkey Cross Reference:</A>
+   </B></FONT></NOBR><I>seamonkey</I>
+   <BR><B><a href="/seamonkey/source/">seamonkey</a>/ <a href="/seamonkey/source/modules/">modules</a>/ <a href="/seamonkey/source/modules/plugin/">plugin</a>/ <a href="/seamonkey/source/modules/plugin/samples/">samples</a>/ <a href="/seamonkey/source/modules/plugin/samples/npruntime/">npruntime</a>/ <a href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in">Makefile.in</a> </B>
+  </TD>
+
+  <TD ALIGN=RIGHT VALIGN=TOP WIDTH="1%">
+   <TABLE BORDER CELLPADDING=12 CELLSPACING=0>
+    <TR>
+     <TD NOWRAP BGCOLOR="#FAFAFA">
+      <A HREF="http://bonsai.mozilla.org/cvslog.cgi?file=mozilla/modules/plugin/samples/npruntime/Makefile.in&rev=HEAD&mark=1.1">CVS Log</A><BR>
+      <A HREF="http://bonsai.mozilla.org/cvsblame.cgi?file=mozilla/modules/plugin/samples/npruntime/Makefile.in&rev=1.1">CVS Blame</A><BR>
+      <A HREF="http://bonsai.mozilla.org/cvsgraph.cgi?file=mozilla/modules/plugin/samples/npruntime/Makefile.in&rev=1.1">CVS Graph</A><BR>
+      <A HREF="?raw=1">Raw output</A>
+     </TD>
+    </TR>
+   </TABLE>
+  </TD>
+
+  <TD ALIGN=RIGHT VALIGN=TOP WIDTH="1%">
+   <TABLE BORDER CELLPADDING=6 CELLSPACING=0>
+    <TR>
+     <TD BGCOLOR="#FAFAFA">
+      <TABLE BORDER=0 CELLPADDING=6 CELLSPACING=0>
+       <TR>
+        <TD NOWRAP ALIGN=LEFT>
+         changes to<BR>this file in<BR>the last:
+        </TD>
+        <TD NOWRAP>
+         <A HREF="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&file=mozilla/modules/plugin/samples/npruntime/Makefile.in&date=day">day</A><BR>
+         <A HREF="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&file=mozilla/modules/plugin/samples/npruntime/Makefile.in&date=week">week</A><BR>
+         <A HREF="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&file=mozilla/modules/plugin/samples/npruntime/Makefile.in&date=month">month</A><BR>
+        </TD>
+       </TR>
+      </TABLE>
+     </TD>
+    </TR>
+   </TABLE>
+  </TD>
+
+ </TR>
+</TABLE>
+<pre lang='en'>  <a name=1 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#1">1</a> ############################################################################
+  <a name=2 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#2">2</a> ## Makefile.in (Generic SANE Plugin Tree)
+  <a name=3 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#3">3</a> ##
+  <a name=4 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#4">4</a> ## The contents of this file are subject to the Mozilla Public
+  <a name=5 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#5">5</a> ## License Version 1.1 (the "License"); you may not use this file
+  <a name=6 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#6">6</a> ## except in compliance with the License. You may obtain a copy of
+  <a name=7 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#7">7</a> ## the License at <a href="http://www.mozilla.org/MPL/">http://www.mozilla.org/MPL/</a>
+  <a name=8 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#8">8</a> ##
+  <a name=9 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#9">9</a> ## Software distributed under the License is distributed on an "AS
+ <a name=10 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#10">10</a> ## IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+ <a name=11 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#11">11</a> ## implied. See the License for the specific language governing
+ <a name=12 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#12">12</a> ## rights and limitations under the License.
+ <a name=13 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#13">13</a> ## Contributor(s): 
+ <a name=14 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#14">14</a> ##
+ <a name=15 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#15">15</a> ##   Rusty Lynch <a href="mailto:rusty.lynch@intel.com">&lt;rusty.lynch@intel.com&gt;</a>
+ <a name=16 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#16">16</a> ############################################################################
+ <a name=17 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#17">17</a> 
+ <a name=18 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#18">18</a> DEPTH           = ../../../..
+ <a name=19 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#19">19</a> topsrcdir       = @top_srcdir@
+ <a name=20 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#20">20</a> srcdir          = @srcdir@
+ <a name=21 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#21">21</a> VPATH           = @srcdir@
+ <a name=22 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#22">22</a> 
+ <a name=23 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#23">23</a> include $(DEPTH)/config/autoconf.mk
+ <a name=24 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#24">24</a> 
+ <a name=25 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#25">25</a> MODULE          = plugin
+ <a name=26 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#26">26</a> LIBRARY_NAME    = nprt
+ <a name=27 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#27">27</a> ifeq ($(OS_ARCH),WINNT)
+ <a name=28 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#28">28</a> RESFILE         = nprt.res
+ <a name=29 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#29">29</a> DEFFILE         = $(srcdir)/nprt.def
+ <a name=30 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#30">30</a> endif
+ <a name=31 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#31">31</a> 
+ <a name=32 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#32">32</a> # plugins should always be shared, even in the "static" build
+ <a name=33 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#33">33</a> FORCE_SHARED_LIB = 1
+ <a name=34 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#34">34</a> 
+ <a name=35 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#35">35</a> # Force use of PIC
+ <a name=36 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#36">36</a> FORCE_USE_PIC   = 1
+ <a name=37 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#37">37</a> 
+ <a name=38 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#38">38</a> NO_DIST_INSTALL = 1
+ <a name=39 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#39">39</a> NO_INSTALL = 1
+ <a name=40 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#40">40</a> 
+ <a name=41 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#41">41</a> CPPSRCS = \
+ <a name=42 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#42">42</a>         np_entry.cpp            \
+ <a name=43 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#43">43</a>         npn_gate.cpp            \
+ <a name=44 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#44">44</a>         npp_gate.cpp            \
+ <a name=45 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#45">45</a>         plugin.cpp              \
+ <a name=46 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#46">46</a>         $(NULL)
+ <a name=47 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#47">47</a> 
+ <a name=48 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#48">48</a> REQUIRES = \
+ <a name=49 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#49">49</a>                 plugin          \
+ <a name=50 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#50">50</a>                 java            \
+ <a name=51 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#51">51</a>                 $(NULL)
+ <a name=52 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#52">52</a> 
+ <a name=53 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#53">53</a> LOCAL_INCLUDES  = -I$(srcdir)/.. -I$(srcdir)/../../public \
+ <a name=54 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#54">54</a>                   -I/usr/lib/glib/include 
+ <a name=55 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#55">55</a> 
+ <a name=56 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#56">56</a> include $(topsrcdir)/config/rules.mk
+ <a name=57 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#57">57</a> 
+ <a name=58 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#58">58</a> install-plugin: $(SHARED_LIBRARY)
+ <a name=59 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#59">59</a> ifdef SHARED_LIBRARY
+ <a name=60 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#60">60</a>         $(INSTALL) $(SHARED_LIBRARY) $(DIST)/bin/plugins
+ <a name=61 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#61">61</a> endif
+ <a name=62 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#62">62</a> 
+ <a name=63 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#63">63</a> libs:: install-plugin
+ <a name=64 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#64">64</a> 
+ <a name=65 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#65">65</a> install:: $(SHARED_LIBRARY)
+ <a name=66 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#66">66</a> ifdef SHARED_LIBRARY
+ <a name=67 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#67">67</a>         $(SYSINSTALL) $(IFLAGS2) $&lt; $(DESTDIR)$(mozappdir)/plugins
+ <a name=68 href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in#68">68</a> endif
+</pre><P>
+   This page was automatically generated by 
+   <A HREF="/mozilla/source/webtools/lxr/"> LXR</A>.
+</html>

@@ -1,0 +1,71 @@
+<html> 
+<head>
+
+<script language="javascript">
+
+    function GetPluginObject()
+    {
+        var obj;
+
+        obj = document.getElementById("boilerplateplugin");
+
+        if (! (obj == null))
+        {
+            return obj;
+        }
+
+        if (navigator.appName == "Opera")
+        {
+            navigator.plugins.refresh(false);
+            document.getElementById("boilerplateplugin_container").innerHTML = 
+            "<object width=\"100\" height=\"100\"  type=\"application/boilerplate-plugin\" hidden=false id=\"boilerplateplugin\"></object>";
+			
+            obj = document.getElementById("boilerplateplugin");            
+        }
+        else
+        if(navigator.appName == "Netscape")
+        {
+            navigator.plugins.refresh(false);
+            document.getElementById("boilerplateplugin_container").innerHTML = 
+            "<embed width=\"100\" height=\"100\" type=\"application/boilerplate-plugin\" hidden=false id=\"boilerplateplugin\"></embed>";
+			
+            obj = document.getElementById("boilerplateplugin");
+            
+	}
+        
+        return obj
+    }
+   
+</script>
+
+<script language="javascript">
+
+	function init()
+	{
+		var obj = GetPluginObject();
+
+		if (obj == null)
+		{
+			document.getElementById("pluginInstalled").innerHTML = "NO";
+		}
+		else
+		{
+			document.getElementById("pluginInstalled").innerHTML = "YES";
+		}
+		
+		document.getElementById("pluginVersion").innerHTML = obj.getVersion ();
+   	 }
+</script>
+
+</head>
+
+<body onload="init();">
+
+<h1> Boilerplate plugin</h1>
+Plugin installed: <span id="pluginInstalled"></span><br>
+Plugin version: <span id="pluginVersion"></span><br>
+
+<div id="boilerplateplugin_container"></div>
+
+</body>
+</html>
